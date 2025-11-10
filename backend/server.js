@@ -10,8 +10,6 @@ const app = express();
 
 // [3] Define routes that handle HTTP GET request for the root URL
 app.get("/", (req, res) => {
-    console.log(req);
-    console.log(res);
     // [4] Send various types of HTTP responses to the client
     res.send("Server is running");
 });
