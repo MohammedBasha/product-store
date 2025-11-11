@@ -14,12 +14,13 @@ const productSchema = new mongoose.Schema(
             maxLength: [8, "Price cannot exceed 8 characters"],
         },
         image: {
+            type: String,
             required: [true, "Please enter product image"],
             default: 0,
         },
     },
     {
-        timestamps: true,
+        timestamps: true, // Add createdAt and updatedAt fields
     }
 );
 
