@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-// The fundamental component used to define the structure and properties of documents within a MongoDB collection
+// Define the structure and properties of documents within a MongoDB collection
 const productSchema = new mongoose.Schema(
     {
         name: {

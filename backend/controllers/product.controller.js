@@ -30,7 +30,7 @@ export const createProduct = async (req, res) => {
         res.status(500).json({ success: false, message: error.message });
     }
 
-    // [4] Send various types of HTTP responses to the client
+    // Send various types of HTTP responses to the client
     res.send("Server is running");
 };
 
@@ -38,7 +38,7 @@ export const updateProduct = async (req, res) => {
     const { id } = req.params;
     const product = await req.body;
 
-    // Check if the product ID is valid
+    // Check if the product id is valid
     if (!mongoose.Types.ObjectId.isValid(id)) {
         return res
             .status(404)
@@ -59,7 +59,7 @@ export const updateProduct = async (req, res) => {
 export const deleteProduct = async (req, res) => {
     const { id } = req.params;
 
-    // Check if the product ID is valid
+    // Check if the product id is valid
     if (!mongoose.Types.ObjectId.isValid(id)) {
         return res
             .status(404)
