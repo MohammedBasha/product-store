@@ -8,6 +8,7 @@ dotenv.config();
 
 // [1] use the express factory function
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 // [7] Middleware to parse incoming JSON data in the request body
 app.use(express.json());
@@ -16,7 +17,7 @@ app.use(express.json());
 app.use("/api/products", ProductRoutes);
 
 // [2] Start a web server and configure it to listen for incoming HTTP requests on the port 5000
-app.listen(5000, () => {
+app.listen(PORT, () => {
     // [6] Connect to MongoDB
     connectDB();
 
