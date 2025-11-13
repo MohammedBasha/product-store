@@ -31,6 +31,4 @@ if (process.env.NODE_ENV === "production") {
 app.listen(PORT, () => {
     // [6] Connect to MongoDB
     connectDB();
-
-    console.log("server started at http://localhost:5000");
 });
