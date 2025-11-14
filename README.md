@@ -15,3 +15,5 @@
 -   **[Node.js](https://nodejs.org/en)** an open-source, cross-platform JavaScript runtime environment.
 
 -   **[React](https://react.dev/)** an open-source library used for mobile and web development.
+
+-   **[Zustand](https://zustand.docs.pmnd.rs/)** A small, fast, and scalable bearbones state management solution.
